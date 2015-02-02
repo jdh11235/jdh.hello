@@ -1,6 +1,36 @@
-/* line 6, /Users/jon/Code/GitHub/jdh11235/jdh.hello/style.sass */
-body {
-  background: orangered;
-  color: gold; }
 
-/*# sourceMappingURL=style.css.map */
+@font-face {
+	font-family: "fira-sans";
+	src: url("font/fira-sans/FiraSans-Regular.otf");
+}
+
+@font-face {
+	font-family: "fira-mono";
+	src: url("font/fira-mono/FiraMono-Regular.otf");
+}
+
+body {
+	background: orangered; /* #ff4500 */
+	color: white;
+	font-family: fira-sans;
+}
+
+.middle {
+	left: 50%;
+	position: fixed;
+	text-align: center;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+
+.visualfn {
+	font-family: fira-mono;
+	font-size: 3em;
+}
+
+#input {
+/*	font-style: italic;*/
+	text-decoration: underline;
+}
