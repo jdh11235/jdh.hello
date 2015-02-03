@@ -1,5 +1,5 @@
 # jdh.hello
-I seriously have no idea.
+Pointless code, just for the fun of it!
 
 ___
 
