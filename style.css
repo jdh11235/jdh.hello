@@ -1,8 +1,10 @@
 
+/*
 @font-face {
 	font-family: "fira-sans";
 	src: url("font/fira-sans/FiraSans-Regular.otf");
 }
+*/
 
 @font-face {
 	font-family: "fira-mono";
@@ -12,7 +14,7 @@
 body {
 	background: orangered; /* #ff4500 */
 	color: white;
-	font-family: fira-sans;
+/*	font-family: fira-sans;*/
 }
 
 .middle {

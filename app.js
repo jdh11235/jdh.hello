@@ -12,13 +12,18 @@ window.addEventListener('load', function () {
 		jdh.hello(input);
 	}
 
-	function textbox_keydown (event) {
+	function textbox_handler (event) {
 		if (event.keyCode === 13) {
-			var text = event.target.innerText;
-			update(text);
+			var text = event.target.innerText.replace(/\n/gi, '');
 			event.target.innerText = text;
+			update(text);
 		}
 	}
 
-	$textbox.addEventListener('keydown', textbox_keydown);
+	$textbox.addEventListener('keyup', textbox_handler);
+	$textbox.innerText = $textbox.innerText.replace(/\n/gi, '');
+
+	document.addEventListener('touchmove', function (event) {
+		event.preventDefault();
+	});
 });
